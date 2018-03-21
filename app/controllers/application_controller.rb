@@ -16,11 +16,11 @@ class ApplicationController < Sinatra::Base
     erb :new
   end
 
-  # post '/posts' do
-  #   @post = Post.create(params)
-  #   puts params
-  #   redirect to '/posts'
-  # end
+  post '/posts' do
+    @post = Post.create(params)
+    puts params
+    redirect to '/posts'
+  end
 
   get '/posts' do
     @posts = Post.all
