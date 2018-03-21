@@ -8,7 +8,7 @@
     <h2><a href="/posts/new">Create a new post</a></h2>
     <% @posts.each do |post| %>
       <h2><a href="/posts/<%= post.id %>">Post #<%= post.id %>: <%= post.name %></a></h2>
-      <h3><%= post.content %></h3>
+      <h3>Content: <%= post.content %></h3>
     <% end %>
   </body>
 </html>
